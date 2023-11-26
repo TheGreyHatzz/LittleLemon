@@ -1,4 +1,26 @@
+.confirm {
+  display: flex; /* Utilisez la flexbox pour aligner les éléments */
+  align-items: center; /* Alignez les éléments verticalement au centre */
+  justify-content: space-between; /* Ajoutez de l'espace entre les éléments */
+}
 
+.confirm h1 {
+  margin: 100px; /* Supprimez les marges par défaut du h1 pour éviter l'espace supplémentaire */
+  margin-left: 250px;
+}
+/* Ajoutez une media query pour les appareils mobiles (par exemple, jusqu'à 767px de large) */
+@media only screen and (max-width: 767px) {
+  .confirm {
+    flex-direction: column; /* Empilez les éléments les uns sur les autres sur les appareils mobiles */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .confirm h1 {
+    margin-left: 0; /* Réinitialisez la marge pour le centrage horizontal */
+    margin-top: 10px; /* Ajoutez une marge en haut pour l'espacement sur les appareils mobiles */
+  }
+}
 body{
   width: 100%;
   margin: 0 auto;
@@ -156,7 +178,7 @@ input, label{
 
 }
 
-.comfirm span{
+span{
   color: blue;
 }
 
@@ -210,7 +232,7 @@ input, label{
   justify-content: space-between;
 }
 
-.orderbtn{
+.orderBtn{
   padding: 5px 12px;
   margin-bottom: 20px;
   font-size: 16px;
